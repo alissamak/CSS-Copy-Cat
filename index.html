@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify Copy Cat</title>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -14,10 +16,11 @@
                         <button type="button"></button>
                     </div>
                     <div class="top-right">
-                        <button id="signup-button" type="button">Sign up</button>
-                        <button id="login-in-button" type="button">Log in</button>
+                        <button id="top-signup-btn" class="btn" type="button">Sign up</button>
+                        <button id="top-login-btn" class="btn" type="button">Log in</button>
                     </div>
                 </header>
+            </div>
             <nav class="nav-bar">
                 <div class="side-panel">
                     <div class="logo" role="banner">
@@ -40,8 +43,10 @@
             </nav>
             <div class="main-container-grid">
                 <main>
-                    <section id="grid-1" aria-label="Since your're up">
-                        <h2>Since your're up</h2>
+                    <section class="grid-1" aria-label="Since your're up">
+                        <div class="grid-title">
+                            <h2>Since you're up</h2>
+                        </div>
                         <div class="grid-container">
                             <div class="album-grid-sections">
                                 <img class="grid-images" src="images/album-1.png" alt="man staring at screen">
@@ -70,9 +75,11 @@
                             </div>
                         </div>
                     </section>
-                    <section id="grid-2" aria-label="Sleep">
-                        <h2>Sleep</h2>
-                        <h4>See All</h4>
+                    <section class="grid-2" aria-label="Sleep">
+                        <div class="grid-title">
+                            <h2>Sleep</h2>
+                            <h4>See All</h4>
+                        </div>
                         <div class="grid-container">
                             <div class="album-grid-sections">
                                 <img class="grid-images" src="images/album-1.1.png" alt="man staring at screen">
@@ -105,11 +112,11 @@
                             <p id="preview-text">Preview of Spotify</p>
                             <p id="signup-text">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
                         </div>
-                        <button class="sign up" type="button">Sign up free</button>
+                        <button id="bottom-signup-btn" class="btn" type="button">Sign up free</button>
                     </div>
                 </footer>
             </div>
-            </div>
+            
         </div>
     </body>
 </html>
