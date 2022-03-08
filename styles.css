@@ -22,6 +22,10 @@ h2, h3{
 h4, p{
     color: var(--grey-text);
 }
+h4{
+    text-transform: uppercase;
+    font-size: 12px;
+}
 .btn{
     border: 2px solid transparent;
     border-radius: 500px;
@@ -55,21 +59,29 @@ h4, p{
     justify-content: space-between;
     height: 64px;
     min-width: 0;
-    /* pointer-events: none; */
     z-index: 2;
-    background-color: var(--black-nav-background);
-    /* opacity: 0; */
+    background-color: rgba(0,0,0,.5);
+    position: sticky;
+    top: 0;
 }
 header{
     display: flex;
     position: relative;
-    width: 100%;
+    width: 94%;
     height: 64px;
     max-width: calc(100vw - var(--nav-bar-width));
     justify-content: space-between;
     align-content: center;
     z-index: 3;
     padding: 16px 32px;
+}
+.top-left{
+    display: flex;
+}
+.top-left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 #top-signup-btn{
     color: var(--white-text);
@@ -84,28 +96,50 @@ header{
     color: var(--grey-text);
     display: flex;
     flex-direction: column;
-    min-height: 0;
-    position: relative;
+    height: 0;
+    position: sticky;
+    top: 0;
 }
 .logo img{
     width: 241px;
 }
+.side-panel ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
 .side-panel li{
+    display: flex;
     list-style: none;
-    padding: 10px 0px;
+    line-height: 1.5em;
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
+    width: 100%;
+    gap: 1em;
 }
 .side-panel a{
     color: var(--grey-text);
     text-decoration: none;
+    padding: 10px 0px;
 }
 .side-panel a:hover{
     color: var(--white-text);
 }
+.side-panel li img{
+    width: 40px;
+    height: 35px;
+}
 #third-banner-list{
-    margin-top: 200px;
+    margin-top: 145px;
+    font-size: 10px;
+}
+#third-banner-list li{
+    font-size: 10px;
+    line-height: 0;
+}
+#third-banner-list li:hover{
+    text-decoration: underline;
 }
 /* Main container with album sections */
 .main-container-grid{
@@ -146,7 +180,7 @@ main{
 }
 .album-grid-sections img{
     border-radius: 2px;
-    width: 200px;
+    width: 180px;
 }
 .album-grid-sections p{
     margin: 0;
@@ -158,12 +192,24 @@ main{
 /* Bottom Gradient Banner with Sign Up */
 .bottom-banner{
     grid-area: bottom-banner;
-    width: 100%;
+    width: 98%;
     z-index: 4;
-    /* position: fixed; */
+    position: sticky;
+    bottom: 0;
 }
-.bottom-banner p{
+.bottom-banner p, h5{
     color: var(--white-text);
+    margin-left: 24px;
+}
+.bottom-banner p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.bottom-banner h5{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 500;
 }
 .signup-bar{
     display: flex;
@@ -175,6 +221,7 @@ main{
     background-image: linear-gradient(90deg,#af2896,#509bf5);
     align-items: center;
     padding: 11px 24px 7px 15px;
+    margin: 0;
 }
 #bottom-signup-btn{
     color: var(--signup-btn-text);
