@@ -8,7 +8,7 @@
     --signup-btn-text: #508dd8;
 }
 body{
-    /* background-color: var(--black-nav-background); */
+    background-color: var(--black-nav-background);
     margin: 0;
     padding: 0;
     border: 0;
