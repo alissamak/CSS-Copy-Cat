@@ -148,7 +148,6 @@ header{
     grid-area: main-container-grid;
     width: 100%;
     flex-direction: column;
-    
 }
 main{
     display: grid;
@@ -157,7 +156,6 @@ main{
     margin: 0;
     border: 0;
 }
-
 .grid-title{
     display: flex;
     align-items: flex-end;
